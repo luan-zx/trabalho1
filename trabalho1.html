@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Layout Proporcional</title>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="jquery.js"></script>
+        <style>
+            .site{
+                width:800px;
+                height:600px;
+                background-color:white;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+            .header{
+                width:100%;
+                height:15%;
+                display: flex;
+            }
+            .header div{
+                flex: 1;
+            }
+            .main{
+                width:100%;
+                height:70%;
+                display: flex;
+            }
+            .esquerda{
+                width:15%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .esquerda div{
+                flex: 1;
+            }
+            .centro{
+                width:70%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .topo-centro{
+                height: 35%;
+                display: flex;
+            }
+            .topo-centro div{
+                flex: 1;
+            }
+            .meio-centro{
+                height: 65%;
+                display: flex;
+                flex-direction: column;
+            }
+            .meio-centro-topo{
+                height: 50%;
+                display: flex;
+            }
+            .meio-centro-topo div{
+                flex: 1;
+            }
+            .meio-centro-baixo{
+                height: 50%;
+                display: flex;
+            }
+            .meio-centro-baixo div{
+                flex: 1;
+            }
+            .direita{
+                width:15%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .direita div{
+                flex: 1;
+            }
+            .footer{
+                width:100%;
+                height:15%;
+                display: flex;
+            }
+            .footer div{
+                flex: 1;
+            }
+            /* Cores baseadas na imagem */
+            .header div:nth-child(1) { background-color: blue; }
+            .header div:nth-child(2) { background-color: pink; }
+            .header div:nth-child(3) { background-color: yellow; }
+            .header div:nth-child(4) { background-color: white; }
+            .esquerda div:nth-child(1) { background-color: lightblue; }
+            .esquerda div:nth-child(2) { background-color: blue; }
+            .esquerda div:nth-child(3) { background-color: purple; }
+            .direita div:nth-child(1) { background-color: black; }
+            .direita div:nth-child(2) { background-color: red; }
+            .topo-centro div:nth-child(1) { background-color: darkred; }
+            .topo-centro div:nth-child(2) { background-color: purple; }
+            .meio-centro-topo div:nth-child(1) { background-color: orange; }
+            .meio-centro-topo div:nth-child(2) { background-color: pink; }
+            .meio-centro-topo div:nth-child(3) { background-color: yellow; }
+            .meio-centro-baixo div:nth-child(1) { background-color: pink; }
+            .meio-centro-baixo div:nth-child(2) { background-color: green; }
+            .meio-centro-baixo div:nth-child(3) { background-color: purple; }
+        </style>
+    </head>
+    <body>
+        <div class="site">
+            <div class="header">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="main">
+                <div class="esquerda">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="centro">
+                    <div class="topo-centro">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="meio-centro">
+                        <div class="meio-centro-topo">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="meio-centro-baixo">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direita">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
